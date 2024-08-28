@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+header {
+    padding: 20px 0;
+    background: rgb(44, 188, 255);
+    box-shadow: 0 4px 6px rgba(0,0,0,.2);  
+}
+  
+.container {
+    padding: 0 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+  
+.logo-box {
+    color: white;
+    font-weight: bolder;
+    font-size: 56px;
+    float: left;
+    margin-right: 20px;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    0%   {left: 0px; top: 0px;}
+    50%  {left: 200px; top: 0px;}
+    100%   {left: 0px; top: 0px;}
+}
+
+.logo-box a {
+    outline: none;
+    display: block;
+}
+  
+.logo-box img {
+    display: block;
+}
+  
+nav {
+    overflow: hidden;
+}
+  
+nav button {
+    margin: 10px;
+    padding: 10px 16px;
+    border-radius: 4px;
+    float: right;
+    border: none;
+    color: rgb(44, 188, 255);
+    font-size: 18px;
+    background-color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+nav button:hover {
+    color: white;
+    background-color: rgb(44, 188, 255);
+    border: 2px solid white; 
+}
+
+input[type=search] {
+    width: 50%;
+    height: 40px;
+    margin-left: 25%;
+    margin-top: 12%;
+    box-sizing: border-box;
+    border: 2px solid rgb(31, 31, 31);
+    padding: 12px 20px;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.sub-button {
+    width: 15%;
+    height: 44px;
+    margin-left: 42.5%;
+    color: white;
+    background-color: rgb(128, 128, 128);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sub-button:hover {
+    background-color: white;
+    color: rgb(44, 188, 255);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+  
+@media screen and (max-width: 660px) {
+    header {
+        text-align: center;
+    }
+    .logo-box {
+      float: none;
+      display: inline-block;
+      margin: 0 0 16px 0;
+    }
+    nav {
+        float: none;
+    }
+}
+  
+@media screen and (max-width: 550px) {
+  nav {
+    overflow: visible;
+  }
+  nav button {
+    display: block;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+  }
+  nav button:hover {
+    background: rgba(0,0,0,.1);
+  }
+}
